@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сканер сайтів — Screenshot Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>🖼️ Screenshot Gallery — Сканер сайтів</header>
+    <div class="container">
+      <form id="screenshot-form" autocomplete="off">
+  <input
+    type="text"
+    id="url-input"
+    placeholder="Введіть адресу сайту, наприклад: https://uk.wikipedia.org"
+    required
+  />
+  <button type="submit">Скріншот</button>
+</form>
+
+      <div class="gallery-title">Моя галерея</div>
+      <div class="gallery" id="gallery">
+        <!-- Скріншоти додаються тут JS-кодом -->
+        <div class="card">
+          <img
+            src="https://placehold.co/140x90?text=Preview"
+            alt="Скріншот"
+            class="screenshot-img"
+          />
+          <a class="site-url" href="https://example.com" target="_blank"
+            >https://example.com</a
+          >
+          <div class="date">22.05.2025</div>
+          <div class="tags">
+            <span class="tag">портфоліо</span>
+            <span class="tag-img">test</span>
+          </div>
+          <div class="card-actions">
+            <button>Копіювати</button>
+            <button>Скачати</button>
+            <button>Видалити</button>
+          </div>
+        </div>
+        <!-- Далі нові картки з'являються динамічно -->
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Сканер сайтів</p>
+        <p>Розроблено з ❤️</p>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
