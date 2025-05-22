@@ -6,7 +6,6 @@ const form = document.getElementById("screenshot-form");
 const input = document.getElementById("url-input");
 const gallery = document.getElementById("gallery");
 
-// --- Галерея: вивести всі скріни ---
 function renderGallery() {
   gallery.innerHTML = "";
   const items = JSON.parse(localStorage.getItem("gallery") || "[]");
@@ -47,7 +46,6 @@ function saveToGallery(screenshot, url) {
   renderGallery();
 }
 
-// --- Обробка форми ---
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const urlToScreenshot = input.value.trim();
